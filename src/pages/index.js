@@ -32,7 +32,7 @@ export default ({ data }) => (
 )
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+    defaultBcg: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 4160, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp

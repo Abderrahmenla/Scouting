@@ -1,32 +1,59 @@
 import React from "react"
-import styles from '../css/footer.module.css'
-import links from '../constants/links'
-import socialicons from '../constants/social-icons'
-import AniLink from "gatsby-plugin-transition-link/AniLink"; // for transition effect between pages
-
+import links from "../constants/links"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import logo from "../images/logo-green-1x.png"
 const Footer = () => {
+  const small = "images/logo-green-small-2x"
+  const small1 = "images/logo-green-2x"
+  const large = "images/logo-green-1x.png"
   return (
-    <footer className={styles.footer}>
-      <div className={styles.links}>
-        {links.map((item,index)=>{
-          return <AniLink fade key={index} to={item.path}>
-                  {item.text}
-                 </AniLink>
-        })}
+    <footer className="footer">
+      <div className="footer__logo-box">
+        <picture className="footer__logo">
+          <source
+            srcSet={`${small} 1x, ${large} 2x`}
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcSet={`${small} 1x, ${small1} 2x`}
+            alt="Full logo"
+            src={logo}
+          />
+        </picture>
       </div>
-      <div className={styles.icons}>
-        {socialicons.map((item,index)=>{
-          return <a
-                  key={index}
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  {item.icon}
-                  </a>
-        })}
-      </div>
-      <div className={styles.copyright}>
-        copyright &copy; Abderrahmen Lahmedi {new Date().getFullYear()} all rights reserved
+      <div className="row">
+        <div className="col-1-of-2">
+          <div className="footer__navigation">
+            <ul className="footer__list">
+              {links.map((item, index) => {
+                return (
+                  <li key={index} className="footer__item">
+                    <AniLink fade to={item.path} className="footer__link">
+                      {item.text}
+                    </AniLink>
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        </div>
+        <div className="col-1-of-2">
+          <p className="footer__copyright">
+            Built by{" "}
+            <a
+              href="https://www.linkedin.com/in/abderrahmen-lahmedi/"
+              className="footer__link"
+            >
+              &nbsp; Abderrahmen Lahmedi
+            </a>{" "}
+            for{" "}
+            <a href="#" className="footer__link">
+              Scouting in ariena
+            </a>
+            . Copyright &copy; by Ensit JE {new Date().getFullYear()} all rights
+            reserved.
+          </p>
+        </div>
       </div>
     </footer>
   )

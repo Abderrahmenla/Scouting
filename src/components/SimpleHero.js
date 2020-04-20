@@ -1,6 +1,5 @@
 import React from "react"
 import logo from "../images/logo-white.png"
-import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
 
 const SimpleHero = ({ img, children }) => {
@@ -14,10 +13,4 @@ const SimpleHero = ({ img, children }) => {
   )
 }
 
-export default styled(SimpleHero)`
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(126, 213, 111, 0.8),
-    rgba(40, 180, 133, 0.8)
-  );
-`
+export default SimpleHero
