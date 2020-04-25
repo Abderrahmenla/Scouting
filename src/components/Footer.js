@@ -20,7 +20,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__logo">
         <Img
-          loading
           className="footer__logo-box"
           fluid={image.image.childImageSharp.fluid}
         />
@@ -44,14 +43,11 @@ const Footer = () => {
         <div className="col-1-of-2">
           <p className="footer__copyright">
             Built by{" "}
-            <a
-              href="https://www.linkedin.com/in/abderrahmen-lahmedi/"
-              className="footer__link"
-            >
+            <a href="/#" className="footer__link">
               &nbsp; Abderrahmen Lahmedi
             </a>{" "}
             for{" "}
-            <a href="#" className="footer__link">
+            <a href="/#" className="footer__link">
               Scouting in ariena
             </a>
             . Copyright &copy; by Ensit JE {new Date().getFullYear()} all rights

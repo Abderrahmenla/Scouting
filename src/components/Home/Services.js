@@ -29,8 +29,8 @@ const Services = () => {
                   </h4>
                   <div className="card__details">
                     <ul>
-                      {item.l.map((ll, i) => {
-                        return <li key={i}>{ll.lll}</li>
+                      {item.l.map((ll, index) => {
+                        return <li key={index + 10}>{ll.lll}</li>
                       })}
                     </ul>
                   </div>
