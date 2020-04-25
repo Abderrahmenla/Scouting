@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import styles from "../../css/items.module.css"
 import Tour from "./Tour"
 import Title from "../Title"
 
@@ -18,9 +17,9 @@ export default class TourList extends Component {
 
   render() {
     return (
-      <section className={styles.tours}>
+      <section>
         <Title title="our troupes" />
-        <div className={styles.center}>
+        <div>
           {this.state.sortedTours.map(({ node }) => {
             return <Tour key={node.contentful_id} tour={node} />
           })}

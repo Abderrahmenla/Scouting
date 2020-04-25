@@ -1,18 +1,18 @@
 .tour {
-  box-shadow: var(--lightShadow);
-  transition: var(--mainTransition);
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s linear;
 }
 .tour:hover {
-  box-shadow: var(--darkShadow);
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .img-container {
   position: relative;
-  background: var(--primaryColor);
-  transition: var(--mainTransition);
+  background: #3fd0d4;
+  transition: all 0.3s linear;
 }
 .img {
-  transition: var(--mainTransition);
+  transition: all 0.3s linear;
 }
 .img-container:hover .img {
   opacity: 0.3;
@@ -25,17 +25,17 @@
   transform: translate(-50%, -50%);
   opacity: 0;
   text-transform: uppercase;
-  letter-spacing: var(--mainSpacing);
-  color: var(--mainWhite);
-  border: 2px solid var(--mainWhite);
+  letter-spacing: 4px;
+  color: #f7f7f7;
+  border: 2px solid #f7f7f7;
   padding: 0.9rem 1.6rem;
   display: inline-block;
-  transition: var(--mainTransition);
+  transition: all 0.3s linear;
   cursor: pointer;
 }
 .link:hover {
-  background: var(--mainWhite);
-  color: var(--primaryColor);
+  background: #f7f7f7;
+  color: #3fd0d4;
 }
 .img-container:hover .link {
   opacity: 1;
@@ -63,7 +63,7 @@
 }
 .country {
   text-transform: capitalize;
-  color: var(--primaryColor);
+  color: #3fd0d4;
   display: flex;
   align-items: center;
 }
@@ -71,7 +71,7 @@
   margin-right: 0.4rem;
 }
 .details {
-  color: var(--darkGrey);
+  color: #cfcfcf;
   text-transform: uppercase;
   text-align: right;
 }

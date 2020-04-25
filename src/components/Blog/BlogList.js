@@ -2,7 +2,6 @@ import React from "react"
 import BlogCard from "./BlogCard"
 import Title from "../Title"
 import { useStaticQuery, graphql } from "gatsby"
-import styles from "../../css/blog.module.css"
 
 const getPosts = graphql`
   query {
@@ -27,9 +26,9 @@ const BlogList = () => {
   const { posts } = useStaticQuery(getPosts)
 
   return (
-    <section className={styles.blog}>
+    <section>
       <Title title="Our troupes" />
-      <div className={styles.center}>
+      <div>
         {posts.edges.map(({ node }) => {
           return <BlogCard key={node.contentful_id} blog={node} />
         })}

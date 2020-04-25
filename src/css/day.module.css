@@ -14,11 +14,11 @@
 }
 .btn svg {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: #3fd0d4;
 }
 .day p {
   line-height: 2;
-  transition: var(--mainTransition);
+  transition: all 0.3s linear;
 }
 @media screen and (min-width: 992px) {
   .day h4 {
