@@ -29,8 +29,8 @@ const Features = () => {
       <div className="row">
         {featurescontent.map((item, index) => {
           return (
-            <div className="col-1-of-4">
-              <div className="feature-box">
+            <div className="col-1-of-4" key={index}>
+              <div className="feature-box" key={index + 1}>
                 <i className={`feature-box__icon ${item.classi}`}></i>
                 <h3 className="heading-tertiary u-margin-bottom-small">
                   {item.title}

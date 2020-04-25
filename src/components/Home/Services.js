@@ -10,9 +10,9 @@ const Services = () => {
       <div className="row">
         {carddetails.map((item, index) => {
           return (
-            <div className="col-1-of-3">
-              <div className="card">
-                <div className="card__side card__side--front">
+            <div className="col-1-of-3" key={index}>
+              <div className="card" key={index + 1}>
+                <div className="card__side card__side--front" key={index + 2}>
                   <Image
                     classi={`card__picture card__picture--${index + 1}`}
                     imgsrc={`nat-${index + 5}.jpg`}
@@ -27,10 +27,10 @@ const Services = () => {
                       {item.title}
                     </span>
                   </h4>
-                  <div className="card__details">
+                  <div className="card__details" key={index + 3}>
                     <ul>
                       {item.l.map((ll, index) => {
-                        return <li key={index + 10}>{ll.lll}</li>
+                        return <li key={ll.id}>{ll.lll}</li>
                       })}
                     </ul>
                   </div>
@@ -38,8 +38,9 @@ const Services = () => {
                 <div
                   className={`card__side card__side--back card__side--back-${index +
                     1}`}
+                  key={index + 4}
                 >
-                  <div className="card__cta">
+                  <div className="card__cta" key={index + 5}>
                     <div className="card__price-box">
                       <p className="card__price-only">{item.text}</p>
                       <p className="card__price-value">{item.year}</p>

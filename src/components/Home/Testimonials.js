@@ -27,8 +27,8 @@ const FeaturedTours = () => {
       <BackgroundImage fluid={backgroundFluidImageStack} className="bg-img">
         {testimonials.map((item, index) => {
           return (
-            <div className="row">
-              <div className="story">
+            <div className="row" key={index + 1}>
+              <div className="story" key={index + 2}>
                 <figure className="story__shape">
                   <Image
                     imgsrc={`nat-${index + 8}.jpg`}
@@ -39,7 +39,7 @@ const FeaturedTours = () => {
                     {item.name}
                   </figcaption>
                 </figure>
-                <div className="story__text">
+                <div className="story__text" key={index + 3}>
                   <h3 className="heading-tertiary u-margin-bottom-small">
                     {item.title}
                   </h3>
