@@ -10,18 +10,13 @@ export default [
     number: "02",
   },
   {
-    path: "/blog",
-    text: "Our stories",
-    number: "03",
-  },
-  {
     path: "/tours",
-    text: "Popular troupes",
-    number: "04",
+    text: "Our troupes",
+    number: "03",
   },
   {
     path: "/contact",
     text: "Contact us",
-    number: "05",
+    number: "04",
   },
 ]

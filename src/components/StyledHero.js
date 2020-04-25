@@ -15,7 +15,7 @@ export default styled(StyledHero)`
   min-height: 50vh;
   background-position: center;
   background-size: cover;
-  opacity: 1 !important;
+  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;

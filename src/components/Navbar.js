@@ -1,6 +1,7 @@
 import React from "react"
 import links from "../constants/links"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 const Navbar = () => {
   return (
     <div className="navigation">

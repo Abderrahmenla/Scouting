@@ -1,31 +1,54 @@
-import React from 'react'
-import Title from '../Title'
-import styles from '../../css/contact.module.css'
+import React from "react"
+import Title from "../Title"
 const Contact = () => {
   return (
-    <section className={styles.contact}>
-      <Title title="contact" subtitle="us" />
-      <div className={styles.center}>
-        <form className={styles.form} action="https://formspree.io/abderrahmen.lahmedigl@gmail.com" method="POST">
-          <div>
-            <label htmlFor="name">name</label>
-            <input type="text" name="name" id="text" className={styles.formControl} placeholder="abderrahmen lahmedi" />
+    <section className="section-contact">
+      <div className="row">
+        <Title title="contact us" />
+        <form
+          className="form"
+          action="https://formspree.io/abderrahmen.lahmedigl@gmail.com"
+          method="POST"
+        >
+          <div className="form__group">
+            <input
+              type="text"
+              className="form__input inp"
+              placeholder="Full name"
+              id="name"
+              required
+            />
+            <label htmlFor="name" className="form__label">
+              Full name
+            </label>
           </div>
-          <div>
-            <label htmlFor="email">email</label>
-            <input type="email " name="email" id="email" className={styles.formControl} placeholder="email@email.com"/>
+          <div className="form__group">
+            <input
+              type="email"
+              className="form__input inp"
+              placeholder="Email address"
+              id="email"
+              required
+            />
+            <label htmlFor="email" className="form__label">
+              Email address
+            </label>
           </div>
-          <div>
-            <label htmlFor="message">message</label>
-            <textarea name="message" id="message" rows="10" className={styles.formControl} placeholder="hello here" />
+          <div className="form__group ">
+            <textarea
+              name="message"
+              id="message"
+              rows="10"
+              className="form__input inp"
+              placeholder="tell us something..."
+            />
           </div>
-          <div>
-            <input type="submit" name="" value="submit here" className={styles.submit} />
+          <div className="form__group">
+            <button className="btn btn--green submit ">submit</button>
           </div>
         </form>
       </div>
     </section>
-
   )
 }
 

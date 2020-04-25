@@ -1,25 +1,29 @@
 import React from "react"
 import links from "../constants/links"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import logo from "../images/logo-green-1x.png"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
+
 const Footer = () => {
-  const small = "images/logo-green-small-2x"
-  const small1 = "images/logo-green-2x"
-  const large = "images/logo-green-1x.png"
+  const image = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "logo-white.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <footer className="footer">
-      <div className="footer__logo-box">
-        <picture className="footer__logo">
-          <source
-            srcSet={`${small} 1x, ${large} 2x`}
-            media="(max-width: 37.5em)"
-          />
-          <img
-            srcSet={`${small} 1x, ${small1} 2x`}
-            alt="Full logo"
-            src={logo}
-          />
-        </picture>
+      <div className="footer__logo">
+        <Img
+          loading
+          className="footer__logo-box"
+          fluid={image.image.childImageSharp.fluid}
+        />
       </div>
       <div className="row">
         <div className="col-1-of-2">

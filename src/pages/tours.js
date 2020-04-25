@@ -7,11 +7,15 @@ import SEO from "../components/SEO"
 
 export default class tours extends Component {
   render() {
+    const backgroundFluidImageStack = [
+      this.props.data.defaultBcg.childImageSharp.fluid,
+      `linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8))`,
+    ].reverse()
     return (
       <Layout>
         <SEO title="Tours" />
         <main>
-          <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
+          <StyledHero img={backgroundFluidImageStack} />
           <Tours />
         </main>
       </Layout>
@@ -20,7 +24,7 @@ export default class tours extends Component {
 }
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+    defaultBcg: file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 4160, quality: 90) {
           ...GatsbyImageSharpFluid_withWebp

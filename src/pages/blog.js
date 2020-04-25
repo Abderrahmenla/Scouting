@@ -6,11 +6,15 @@ import BlogList from "../components/Blog/BlogList"
 import SEO from "../components/SEO"
 
 const blog = ({ data }) => {
+  const backgroundFluidImageStack = [
+    data.blogBcg.childImageSharp.fluid,
+    `linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8))`,
+  ].reverse()
   return (
     <Layout>
       <SEO title="Blog" />
       <main>
-        <StyledHero img={data.blogBcg.childImageSharp.fluid} />
+        <StyledHero img={backgroundFluidImageStack} />
         <BlogList />
       </main>
     </Layout>

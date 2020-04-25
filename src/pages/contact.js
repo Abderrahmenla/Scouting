@@ -6,11 +6,15 @@ import Contact from "../components/Contact/Contact"
 import SEO from "../components/SEO"
 
 export default function contact({ data }) {
+  const backgroundFluidImageStack = [
+    data.contactBcg.childImageSharp.fluid,
+    `linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8))`,
+  ].reverse()
   return (
     <Layout>
       <SEO title="Contact" />
       <main>
-        <StyledHero img={data.contactBcg.childImageSharp.fluid} />
+        <StyledHero img={backgroundFluidImageStack} />
         <Contact />
       </main>
     </Layout>
