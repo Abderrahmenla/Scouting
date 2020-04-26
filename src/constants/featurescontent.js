@@ -1,25 +1,25 @@
 export default [
   {
     classi: "icon-basic-world",
-    titel: "Explore Scouting",
+    title: "Explore Scouting",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
   },
   {
     classi: "icon-basic-compass",
-    titel: "Find directions",
+    title: "Find directions",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
   },
   {
     classi: "icon-basic-map",
-    titel: "Find the way",
+    title: "Find the way",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
   },
   {
     classi: "icon-basic-heart",
-    titel: "Healthy childhood",
+    title: "Healthy childhood",
     text:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
   },

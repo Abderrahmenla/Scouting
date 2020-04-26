@@ -1,7 +1,0 @@
-.error {
-  background: #3fd0d4;
-  min-height: calc(100vh - 62px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

@@ -1,11 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import styles from "../css/single-blog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import SEO from '../components/SEO'
-
+import SEO from "../components/SEO"
 
 const Blog = ({ data }) => {
   const {
@@ -19,7 +17,11 @@ const Blog = ({ data }) => {
         return (
           <div className="rich">
             <h3>this is awesome image</h3>
-            <img width="400" src={node.data.target.fields.file["en-US"].url} alt="exploring 1" />
+            <img
+              width="400"
+              src={node.data.target.fields.file["en-US"].url}
+              alt="exploring 1"
+            />
             <p>images provided by john doe</p>
           </div>
         )
@@ -50,14 +52,12 @@ const Blog = ({ data }) => {
   }
   return (
     <Layout>
-    <SEO title={title} />
-      <section className={styles.blog}>
-        <div className={styles.center}>
+      <SEO title={title} />
+      <section>
+        <div>
           <h1>{title}</h1>
           <h4>published at : {published}</h4>
-          <article className={styles.post}>
-            {documentToReactComponents(json, options)}
-          </article>
+          <article>{documentToReactComponents(json, options)}</article>
           <AniLink fade to="/blog" className="btn-primary">
             all posts
           </AniLink>

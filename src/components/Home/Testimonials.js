@@ -2,6 +2,8 @@ import React from "react"
 import Title from "../Title"
 import testimonials from "../../constants/testimonials"
 import { useStaticQuery, graphql } from "gatsby"
+import logo from "../../images/nat-8.jpg"
+import logoo from "../../images/nat-9.jpg"
 import BackgroundImage from "gatsby-background-image"
 import Image from "../Image.js"
 
@@ -30,10 +32,10 @@ const FeaturedTours = () => {
             <div className="row" key={index + 1}>
               <div className="story" key={index + 2}>
                 <figure className="story__shape">
-                  <Image
-                    imgsrc={`nat-${index + 8}.jpg`}
-                    classi={`story__img`}
-                    lin={`linear-gradient(transparent, transparent)`}
+                  <img
+                    src={!index ? logo : logoo}
+                    alt={`testimonial ${index + 1}`}
+                    className="story__img"
                   />
                   <figcaption className="story__caption">
                     {item.name}
