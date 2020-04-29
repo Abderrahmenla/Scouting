@@ -12,7 +12,7 @@ export default function contact({ data }) {
   ].reverse()
   return (
     <Layout>
-      <SEO title="Contact" />
+      <SEO title="Contact" description="a contact page in order to reach us" />
       <main>
         <StyledHero img={backgroundFluidImageStack} />
         <Contact />

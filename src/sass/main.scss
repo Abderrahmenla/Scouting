@@ -21,9 +21,9 @@
 @import "components/form";
 @import "components/popup";
 @import "components/story";
-@import "components/Tours/items";
-@import "components/Tours/tour";
-@import "components/Tours/day";
+@import "components/Troupes/items";
+@import "components/Troupes/troupe";
+@import "components/Troupes/day";
 
 // Layout
 
@@ -36,8 +36,8 @@
 
 @import "pages/home";
 @import "pages/contact";
-@import "pages/tours";
+@import "pages/troupes";
 
 // Templates
 
-@import "templates/template-tour";
+@import "templates/template-troupe";

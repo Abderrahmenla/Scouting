@@ -61,7 +61,7 @@ const Popup = () => {
                   vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
                   euismod nisi porta.
                 </p>
-                <AniLink fade to="/tours" className="btn btn--green">
+                <AniLink fade to="/troupes" className="btn btn--green">
                   Join now
                 </AniLink>
               </div>

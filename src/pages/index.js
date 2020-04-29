@@ -16,7 +16,7 @@ export default () => (
     <SEO title="Home" description="this is description" />
     <SimpleHero>
       <Banner title="Scouting" info="is where life happens">
-        <AniLink fade to="/tours" className="btn btn--white btn--animated">
+        <AniLink fade to="/troupes" className="btn btn--white btn--animated">
           Discover troupes
         </AniLink>
       </Banner>

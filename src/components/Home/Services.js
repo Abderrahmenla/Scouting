@@ -56,7 +56,7 @@ const Services = () => {
         })}
       </div>
       <div className="u-center-text u-margin-top-huge">
-        <AniLink fade to="/tours" className="btn btn--green">
+        <AniLink fade to="/troupes" className="btn btn--green">
           Discover all troupes
         </AniLink>
       </div>

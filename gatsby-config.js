@@ -8,7 +8,7 @@ module.exports = {
     author: "@Abderrahmenlh",
     twitterUsername: "@AbderrahmenLah1",
     image: "/defaultBcg.jpeg",
-    siteUrl: "https://back-roads.netlify.com",
+    siteUrl: "https://ariena-scouting.netlify.com",
   },
   plugins: [
     {

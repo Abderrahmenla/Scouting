@@ -1,10 +1,10 @@
 import React from "react"
-import TourList from "./TourList"
+import TroupeList from "./TroupeList"
 import { useStaticQuery, graphql } from "gatsby"
 
-const getTours = graphql`
+const getTroupes = graphql`
   query {
-    tours: allContentfulTour {
+    troupes: allContentfulTour {
       edges {
         node {
           name
@@ -24,10 +24,10 @@ const getTours = graphql`
   }
 `
 
-const Tours = () => {
-  const { tours } = useStaticQuery(getTours)
+const Troupes = () => {
+  const { troupes } = useStaticQuery(getTroupes)
 
-  return <TourList tours={tours} />
+  return <TroupeList troupes={troupes} />
 }
 
-export default Tours
+export default Troupes

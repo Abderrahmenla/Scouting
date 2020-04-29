@@ -5,12 +5,12 @@ export default [
     number: "01",
   },
   {
-    path: "/tours",
+    path: "/about",
     text: "About us",
     number: "02",
   },
   {
-    path: "/tours",
+    path: "/troupes",
     text: "Our troupes",
     number: "03",
   },
