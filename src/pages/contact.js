@@ -8,7 +8,7 @@ import SEO from "../components/SEO"
 export default function contact({ data }) {
   const backgroundFluidImageStack = [
     data.contactBcg.childImageSharp.fluid,
-    `linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8))`,
+    `linear-gradient(to bottom right,rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8))`,
   ].reverse()
   return (
     <Layout>
