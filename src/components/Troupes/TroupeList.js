@@ -17,7 +17,7 @@ export default class TroupeList extends Component {
   render() {
     return (
       <section className="section-troupes">
-        <div className="u-center-text u-margin-top-huge">
+        <div className="u-center-text u-margin-top-big">
           <h2 className="heading-secondary">our troupes</h2>
         </div>
         <div className="center">
