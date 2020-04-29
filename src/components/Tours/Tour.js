@@ -7,26 +7,33 @@ import PropTypes from "prop-types"
 
 const Tour = ({ tour }) => {
   const { name, price, country, days, slug, images } = tour
-  console.log(country)
 
   let mainImage = images[0].fluid
 
   return (
-    <article>
-      <div>
-        <Image fluid={mainImage} alt="single tour" />
-        <AniLink fade to={`/tours/${slug}`}>
+    <article className="tour">
+      <div className="tour__imgContainer">
+        <Image
+          fluid={mainImage}
+          className="tour__imgContainer__img"
+          alt="single tour"
+        />
+        <AniLink
+          fade
+          to={`/tours/${slug}`}
+          className="tour__imgContainer__link"
+        >
           details
         </AniLink>
       </div>
-      <div>
+      <div className="tour__footer">
         <h3>{name}</h3>
-        <div>
-          <h4>
-            <FaMap />
+        <div className="tour__footer__info">
+          <h4 className="tour__footer__info__country">
+            <FaMap className="tour__footer__info__icon" />
             {country || "default country"}
           </h4>
-          <div>
+          <div className="tour__footer__info__details">
             <h6>{days} days</h6>
             <h6>from ${price}</h6>
           </div>

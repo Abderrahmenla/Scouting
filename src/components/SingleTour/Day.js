@@ -6,10 +6,10 @@ const Day = ({ day, info }) => {
     setInfo(showInfo => !showInfo)
   }
   return (
-    <article>
+    <article className="day">
       <h4>
         {day}
-        <button onClick={toggleInfo}>
+        <button onClick={toggleInfo} className="day__btn">
           <FaAngleDown />
         </button>
       </h4>

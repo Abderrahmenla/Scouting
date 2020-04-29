@@ -1,11 +1,17 @@
+//Abstracts
+
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
+
+// Base
 
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+
+// Components
 
 @import "components/bg-img";
 @import "components/button";
@@ -15,11 +21,23 @@
 @import "components/form";
 @import "components/popup";
 @import "components/story";
+@import "components/Tours/items";
+@import "components/Tours/tour";
+@import "components/Tours/day";
+
+// Layout
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 
+// Pages
+
 @import "pages/home";
 @import "pages/contact";
+@import "pages/tours";
+
+// Templates
+
+@import "templates/template-tour";

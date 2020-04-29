@@ -1,0 +1,27 @@
+.day {
+  margin: 2rem 0;
+  h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  p {
+    line-height: 2;
+    @include mainTransition;
+  }
+  &__btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    svg {
+      font-size: $default-font-size;
+      color: $color-primary;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .day h4 {
+      width: 40vw;
+    }
+  }
+}

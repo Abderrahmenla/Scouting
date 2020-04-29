@@ -1,0 +1,80 @@
+.tour {
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  @include mainTransition;
+  &:hover {
+    @include darkShadow;
+  }
+  &__imgContainer {
+    position: relative;
+    background: $color-primary;
+    @include mainTransition;
+    &:hover &__img {
+      opacity: 0.3;
+    }
+    &:hover &__link {
+      opacity: 1;
+    }
+    &__img {
+      transition: all 0.3s linear;
+    }
+    &__link {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      text-transform: uppercase;
+      letter-spacing: $mainSpacing;
+      color: $color-white;
+      border: 2px solid $color-white;
+      padding: 0.9rem 1.6rem;
+      display: inline-block;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      &:hover {
+        background: $color-white;
+        color: $color-primary;
+      }
+    }
+  }
+  &__footer {
+    padding: 1rem;
+    text-align: left;
+    h3 {
+      text-transform: capitalize;
+      margin-bottom: 0;
+      font-weight: 700;
+      letter-spacing: $mainSpacing;
+      font-size: $default-font-size;
+      color: #222;
+    }
+    &__info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-transform: uppercase;
+      align-items: center;
+      margin-top: 0.5rem;
+      h6,
+      h4 {
+        letter-spacing: $mainSpacing;
+        margin-bottom: 0;
+        font-size: 1rem;
+      }
+      &__country {
+        text-transform: capitalize;
+        color: $color-primary;
+        display: flex;
+        align-items: center;
+      }
+      &__icon {
+        margin-right: 0.4rem;
+      }
+      &__details {
+        color: $color-grey-dark;
+        text-transform: uppercase;
+        text-align: right;
+      }
+    }
+  }
+}

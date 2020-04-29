@@ -24,34 +24,41 @@ const Template = ({ data }) => {
     <Layout>
       <SEO title={name} />
       <StyledHero img={mainImage.fluid} />
-      <section>
-        <div>
-          <div>
+      <section className="template-tour">
+        <div className="template-tour__center">
+          <div className="template-tour__center__images">
             {tourImages.map((item, index) => {
-              return <Img key={index} fluid={item.fluid} alt="single tour" />
+              return (
+                <Img
+                  key={index}
+                  fluid={item.fluid}
+                  alt="single tour"
+                  className="template-tour__center__images__image"
+                />
+              )
             })}
           </div>
           <h2>{name}</h2>
-          <div>
+          <div className="template-tour__center__info">
             <p>
-              <FaMoneyBillWave />
+              <FaMoneyBillWave className="template-tour__center__info__icon" />
               starting from ${price}
             </p>
             <p>
-              <FaMap />
+              <FaMap className="template-tour__center__info__icon" />
               {country}
             </p>
           </div>
           <h4>starts on : {start}</h4>
           <h4>duration : {days}</h4>
-          <p>{description}</p>
+          <p className="template-tour__center__desc">{description}</p>
           <h2>daily schedule</h2>
-          <div>
+          <div className="template-tour__center__journey">
             {journey.map((item, index) => {
               return <Day key={index} day={item.day} info={item.info} />
             })}
           </div>
-          <AniLink fade to="/tours">
+          <AniLink fade to="/tours" className="btn btn--green">
             back to tour
           </AniLink>
         </div>

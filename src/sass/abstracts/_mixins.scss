@@ -6,6 +6,18 @@
   }
 }
 
+@mixin mainTransition {
+  transition: all 0.3s linear;
+}
+
+@mixin darkShadow {
+  box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@mixin lightShadow {
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
 @mixin absCenter {
   position: absolute;
   top: 50%;
