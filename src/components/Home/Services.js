@@ -5,7 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Image from "../Image.js"
 const Services = () => {
   return (
-    <section className="section-tours" id="section-tours">
+    <section className="section-troupes" id="section-troupes">
       <Title title="MOST POPULAR TROUPES" />
       <div className="row">
         {carddetails.map((item, index) => {
