@@ -24,9 +24,13 @@ const FeaturedTours = () => {
     `linear-gradient(to right bottom, #f6cd5f, #e3cf5b, #ced25a, #b8d35d, #a1d463, #7dd577, #54d48d, #00d1a4, #00c9ca, #00beeb, #00aeff, #2998ff)`,
   ].reverse()
   return (
-    <section className="section-stories">
+    <>
       <Title title="We make kids genuinely happy" />
-      <BackgroundImage fluid={backgroundFluidImageStack} className="bg-img">
+      <section className="section-stories">
+        <BackgroundImage
+          fluid={backgroundFluidImageStack}
+          className="bg-img"
+        ></BackgroundImage>
         {testimonials.map((item, index) => {
           return (
             <div className="row" key={index + 1}>
@@ -51,8 +55,8 @@ const FeaturedTours = () => {
             </div>
           )
         })}
-      </BackgroundImage>
-    </section>
+      </section>
+    </>
   )
 }
 

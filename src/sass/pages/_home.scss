@@ -35,6 +35,7 @@
 .section-stories {
   position: relative;
   padding: 10rem 0 15rem 0;
+  margin: 12rem 0;
 
   @include respond(tab-port) {
     padding: 10rem 0 !important;
@@ -65,7 +66,7 @@
       rgba($color-white, 0.9) 0%,
       rgba($color-white, 0.9) 65%,
       transparent 65%
-    );
+    ) !important;
     background-size: cover !important;
   }
 
