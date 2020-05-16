@@ -17,6 +17,8 @@ module.exports = {
         name: `Ariena Scout`,
         short_name: `Ariena Scout`,
         start_url: `/`,
+        background_color: `#55c57a`,
+        theme_color: `#55c57a`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
