@@ -38,9 +38,15 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://back-roads.netlify.com",
-        sitemap: "https://back-roads.netlify.com/sitemap.xml",
+        host: "https://ariena-scouting.netlify.com",
+        sitemap: "https://ariena-scouting.netlify.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/about/`, `/troupes/`, `/contact/`, `/troupes/*`],
       },
     },
     `gatsby-plugin-sass`,
@@ -51,5 +57,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-netlify`,
   ],
 }

@@ -5,7 +5,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import logo from "../../images/nat-8.jpg"
 import logoo from "../../images/nat-9.jpg"
 import BackgroundImage from "gatsby-background-image"
-import Image from "../Image.js"
 
 const FeaturedTours = () => {
   const image = useStaticQuery(graphql`
