@@ -38,30 +38,28 @@ const Template = ({ data }) => {
               )
             })}
           </div>
-          <div className="center-div">
-            <h2>{name}</h2>
-            <div className="template-troupe__info">
-              <p>
-                <FaMoneyBillWave className="template-troupe__icon" />
-                starting from ${price}
-              </p>
-              <p>
-                <FaMap className="template-troupe__icon" />
-                {country}
-              </p>
-            </div>
-            <h4>starts on : {start}</h4>
-            <h4>duration : {days}</h4>
-            <p className="template-troupe__desc">{description}</p>
-            <h2>daily schedule</h2>
-            <div className="template-troupe__journey">
-              {journey.map((item, index) => {
-                return <Day key={index} day={item.day} info={item.info} />
-              })}
-              <AniLink fade to="/troupes" className="btn btn--green center-btn">
-                back to troupes
-              </AniLink>
-            </div>
+          <h2>{name}</h2>
+          <div className="template-troupe__info">
+            <p>
+              <FaMoneyBillWave className="template-troupe__icon" />
+              starting from ${price}
+            </p>
+            <p>
+              <FaMap className="template-troupe__icon" />
+              {country}
+            </p>
+          </div>
+          <h4>starts on : {start}</h4>
+          <h4>duration : {days}</h4>
+          <p className="template-troupe__desc">{description}</p>
+          <h2>daily schedule</h2>
+          <div className="template-troupe__journey">
+            {journey.map((item, index) => {
+              return <Day key={index} day={item.day} info={item.info} />
+            })}
+            <AniLink fade to="/troupes" className="btn btn--green center-btn">
+              back to troupes
+            </AniLink>
           </div>
         </div>
       </section>
