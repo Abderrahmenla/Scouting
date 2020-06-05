@@ -45,12 +45,6 @@ module.exports = {
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/about/`, `/troupes/`, `/contact/`, `/troupes/*`],
-      },
-    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
@@ -60,5 +54,11 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-playground`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/about/`, `/troupes/`, `/contact/`, `/troupes/*`],
+      },
+    },
   ],
 }
