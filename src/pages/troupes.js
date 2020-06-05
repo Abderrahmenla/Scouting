@@ -9,7 +9,7 @@ export default class troupes extends Component {
   render() {
     const backgroundFluidImageStack = [
       this.props.data.defaultBcg.childImageSharp.fluid,
-      `linear-gradient(to bottom right,rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8))`,
+      `linear-gradient(rgba(255, 89, 108, 0.8),rgba(226, 0, 26, 0.8))`,
     ].reverse()
     return (
       <Layout>
