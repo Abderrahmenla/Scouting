@@ -25,7 +25,7 @@ export default [
     text: "Only",
     year: "+10 Years",
     btn: "Join now!",
-    linear: `linear-gradient(rgba(255, 89, 108, 0.8),rgba(226, 0, 26, 0.8))`,
+    linear: `linear-gradient(rgba(126, 213, 111, 0.8),rgba(40, 180, 133, 0.8))`,
   },
   {
     title: "The Sea Adventurer",
